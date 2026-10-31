@@ -1,0 +1,27 @@
+:root{--bg:#15133a;--panel:#231f5c;--edge:#3a3480;--ink:#f4f2fa;--muted:#b9b4dc;--gold:#ffc93c;--pink:#ff5fa2;--mint:#5be3a0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Inter",-apple-system,system-ui,sans-serif}
+a{color:var(--gold)}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header{border-bottom:3px solid var(--edge);background:#100e2e}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-family:"Press Start 2P",monospace;font-size:12px;letter-spacing:.02em}
+.brand img{width:36px;height:36px;border-radius:8px;image-rendering:pixelated}
+nav{display:flex;gap:18px;font-weight:600}nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--gold)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:48px 0 24px}
+.hero h1{font-family:"Press Start 2P",monospace;font-size:28px;line-height:1.35;margin:0 0 16px;color:var(--gold);text-shadow:3px 3px 0 #000}
+.hero p{color:var(--muted);margin:0 0 20px}
+.badge{display:inline-block;background:var(--pink);color:#fff;font-weight:800;padding:12px 20px;border-radius:10px;border:3px solid #000;box-shadow:0 4px 0 #000;text-decoration:none}
+.badge.soon{background:var(--panel);color:var(--gold);border-color:var(--edge);box-shadow:0 4px 0 #0a0820}
+.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:24px 0 40px}
+.shots img,.hero img.phone{width:100%;border-radius:18px;border:3px solid var(--edge);display:block}
+.hero img.phone{max-width:300px;justify-self:center}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding-bottom:48px}
+.card{background:var(--panel);border:3px solid var(--edge);border-radius:14px;padding:18px}
+.card h3{margin:0 0 6px;color:var(--gold);font-size:17px}.card p{margin:0;color:var(--muted);font-size:15px}
+.doc{padding:36px 0 56px}.doc h1{font-family:"Press Start 2P",monospace;font-size:20px;line-height:1.4;color:var(--gold);margin:0 0 8px}
+.doc h2{font-size:20px;margin:32px 0 6px}.doc p,.doc li{color:#dcd8f2}.doc .muted{color:var(--muted)}
+.doc table{width:100%;border-collapse:collapse;font-size:15px}.doc th,.doc td{border:1px solid var(--edge);padding:8px 10px;text-align:left;vertical-align:top}.doc th{background:var(--panel)}
+footer{border-top:3px solid var(--edge);color:var(--muted);font-size:14px;padding:22px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:700px){.hero{grid-template-columns:1fr;padding-top:32px}.hero h1{font-size:20px}.cards{grid-template-columns:1fr}.shots{grid-template-columns:1fr 1fr}.shots img:nth-child(3){display:none}}
